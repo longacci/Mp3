@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="Play">
+        <div class="Play-box">
+            <div class="layer fa-3x">
+                <i class="fas fa-spinner fa-pulse"></i>
+            </div>
+            <div class="Play-title">Mai linh - 24k Right</div>
+            <div class="Play-media">
+                <!-- https://cdn.dribbble.com/users/3960463/screenshots/14630140/media/c79331860d7ca1b97430a4888617f428.png?compress=1&resize=800x600 -->
+                <img src="./files/mailinh.PNG" alt="" class="Play-img">
+            </div>
+            <div class="progress">
+                <input type="range" id="progress-bar" min="0" max="" value="0" class="bar">
+                <audio src="./files/mailinh.mp3" id="song"></audio>
+            </div>
+            <div class="Play-number">
+                <span class="Play-duration">0:00</span>
+                <span class="Play-remaining">0:00</span>
+            </div>
+            <div class="Play-tool">
+                <i class="fa fa-backward Play-pre"></i>
+                <i class="fa fa-play Play-play"></i>
+                <i class="fa fa-forward Play-nex"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./style.js"></script>
+</body>
+</html>
